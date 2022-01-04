@@ -1,0 +1,44 @@
+import pygame
+
+
+¨¨¨
+Objects
+¨¨¨
+class Player(pygame.sprite.Sprite):
+  def __init__(self):
+    super().__init__()
+    self.width = 40
+    self.height = 60
+    self.image = pygame.Surface((self.width. self.height))
+    self.image.fill(BLUE)
+    self.rect = self.image.get_rect()
+
+
+
+¨¨¨
+Setup
+¨¨¨
+# put run-once code
+worldx = 800
+worldy = 600
+
+fps = 40 #frames per second
+ani = 4 # animation cycles
+clock = pygame.time.Clock()
+pygame.init()
+
+pygame.display.set_mode([worldx, worldy])
+
+# range of RBG = 0 - 255 
+BLUE = (25, 25, 200)
+ORANGE = (255, 141,0)
+Red = (255, 0,0)
+
+¨¨¨
+Main Loop
+¨¨¨
+
+# put game loop here
+while main:
+  world.fill(Blue)
+  pygame.display
